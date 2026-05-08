@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #f8f1ea;
+  color: #1c1917;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+}
+
+::selection {
+  background: rgba(180, 135, 95, 0.22);
+}
+
+.dream-noise {
+  position: relative;
+}
+
+.dream-noise::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.28;
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.55) 0 1px, transparent 1px),
+    radial-gradient(circle at 80% 30%, rgba(255, 255, 255, 0.4) 0 1px, transparent 1px),
+    radial-gradient(circle at 45% 70%, rgba(120, 113, 108, 0.08) 0 1px, transparent 1px);
+  background-size: 36px 36px, 52px 52px, 44px 44px;
+}
+
+.soft-glow {
+  box-shadow:
+    0 30px 90px rgba(120, 90, 60, 0.12),
+    0 12px 35px rgba(120, 90, 60, 0.08);
+}
